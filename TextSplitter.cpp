@@ -1,5 +1,6 @@
 // ------------------------------------------------------------
 // textSplitter.cpp
+// v1.1
 // ------------------------------------------------------------
 
 #include <windows.h>
@@ -347,3 +348,4 @@ EXTERN_C __declspec(dllexport) void UninitializePlugin() {
     if (hGuiFont) DeleteObject(hGuiFont);
 
 }
+
