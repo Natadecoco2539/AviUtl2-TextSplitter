@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "AviUtl Plugin Build (.aux2)",
+            "command": "g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-shared",
+                "-static",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\TextSplitter.aux2",
+                "-luser32",
+                "-lgdi32" ,
+                "-lcomctl32",
+                "-lcomdlg32"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "AviUtl2用プラグインのビルドタスク"
+        }
+    ]
+}
