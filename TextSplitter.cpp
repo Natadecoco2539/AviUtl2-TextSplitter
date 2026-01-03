@@ -319,7 +319,7 @@ INT_PTR CALLBACK MainDlgProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp) {
 //  プラグイン エントリーポイント
 // ==============================================================================
 EXTERN_C __declspec(dllexport) void RegisterPlugin(HOST_APP_TABLE* host) {
-    host->set_plugin_information(L"テキスト分割プラグイン V2.3");
+    host->set_plugin_information(L"テキスト分割プラグイン V1.1");
     
     // ブラシの作成
     g_hBrBg = CreateSolidBrush(COL_BG);
@@ -345,4 +345,5 @@ EXTERN_C __declspec(dllexport) void UninitializePlugin() {
     DeleteObject(g_hBrBtn);
     DeleteObject(g_hBrBtnPush);
     if (hGuiFont) DeleteObject(hGuiFont);
+
 }
